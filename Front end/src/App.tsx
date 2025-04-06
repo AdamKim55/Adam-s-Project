@@ -1,3 +1,4 @@
+import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 
@@ -7,7 +8,9 @@ function App(){
     console.log(item);
   }
 
-  return <div><ListGroup items={items} heading ="Please Select an Option" onSelectItem={handleSelectItem}/></div>
+  return <div>
+    <ListGroup items={items} heading ="Please Select an Option" onSelectItem={handleSelectItem}/>
+  <Button onClick={() => console.log('Clicked')}>select</Button></div>
 }
 
 export default App;
